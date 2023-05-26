@@ -1,6 +1,7 @@
 <img src="icon.png" align="right"/>
 <img src="chrome.png" align="left" width="150" style="margin: 5px;"/>
 <img src="firefox.png" align="left" width="90" style="margin: 5px;"/>
+<img src="android.png" align="left" width="130" style="margin: 5px;"/>
 
 # README [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
 
