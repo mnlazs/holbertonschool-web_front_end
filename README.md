@@ -1,6 +1,7 @@
 <img src="icon.png" align="right" />
-<img src="chrome.png" align="left" width="200"/>
-# README [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
+<img src="chrome.png" align="left" width="200" style="margin: 10px;"/>
+# README [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
+(https://github.com/sindresorhus/awesome#readme)
 
 ## Resources:books:
 Read or watch:
