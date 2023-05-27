@@ -21,15 +21,18 @@ Read or watch:
 ---
 
 ## Learning Objectives:bulb:
-What you should learn from this project:
 
-- What is CSS
-- How to add style to an element
-- What is a class
-- What is a selector
-- How to compute CSS Specificity Value
-- What are Box properties in CSS
-- How does the browser load a webpage
+- What you should learn from this project:
+- What Developer Tools in your browser are
+- How to open the Developer Tools on Chrome, Firefox, Safari, and Edge.
+- How to use the elements tab to edit HTML and CSS
+- How to audit a page according to the tips suggested by Lighthouse
+- How to create and run snippets on a pages.
+- How to get information about files and server configurations
+- How to block requests
+- How to know how much JavaScript or CSS is used on a page
+- How to detect 404 issues
+- How to move elements on a webpage
 ---
 
 ## Requirements
@@ -40,48 +43,41 @@ What you should learn from this project:
 - Your code should be W3C compliant and validate with [W3C-Validator](https://github.com/hs-hq/W3C-Validator)
 ---
 <img src="images/infografia.png" align="center" />
+---
+Developer Tools are built-in tools in web browsers that allow developers to inspect, debug, and analyze web pages. They provide a set of features and functionalities to help developers with tasks like editing HTML and CSS, analyzing network traffic, debugging JavaScript code, optimizing performance, and more.
 
-## 1. What is CSS?
-CSS stands for Cascading Style Sheets. It is a stylesheet language used for describing the presentation of a document written in HTML or XML. CSS defines how elements in a web page should be displayed, including their layout, colors, fonts, and other visual aspects.
+## 1. Opening Developer Tools:
 
-## 2. How to add style to an element?
-### You can add style to an element using CSS in three ways:
+### Chrome
+Right-click on a web page and select "Inspect" or press Ctrl+Shift+I (Windows/Linux) or Command+Option+I (Mac).
+### Firefox
+Right-click on a web page and select "Inspect Element" or press Ctrl+Shift+C (Windows/Linux) or Command+Option+C (Mac).
+### Safari
+Enable the Develop menu in Safari's preferences, then select "Show Web Inspector" from the Develop menu.
+### Edge
+Right-click on a web page and select "Inspect Element" or press Ctrl+Shift+I (Windows/Linux) or Command+Option+I (Mac).
+Using the Elements tab to edit HTML and CSS: In the Elements tab of the Developer Tools, you can inspect and edit the HTML and CSS of a web page. Simply select the desired element in the HTML tree, and you can modify its attributes, content, or styles in the right-hand panel. Changes made here are temporary and won't affect the actual web page.
 
-- Inline styles: Apply styles directly to an HTML element using the style attribute.
-- Internal stylesheets: Include a <style> element within the <head> section of your HTML document.
-- External stylesheets: Create a separate CSS file and link it to your HTML document using the <link> element.
+## 2. Auditing a page with Lighthouse
+Lighthouse is a tool integrated into the Developer Tools that allows you to audit a web page for performance, accessibility, SEO, and more. To use it, open the Developer Tools, go to the Lighthouse tab, and click "Generate report." Lighthouse will analyze the page and provide suggestions and tips for improvement.
 
-## 3. What is a class?
-In CSS, a class is a way to define a group of elements that share a common set of styles. It allows you to apply the same style to multiple elements without repeating the style definitions. You can add a class to an HTML element by including the class attribute and giving it a name.
+## 3. Creating and running snippets on a page
+In the Developer Tools, navigate to the Sources tab and select the Snippets panel. You can create a new snippet by right-clicking and choosing "New Snippet." Write your JavaScript code in the editor, and then you can run the snippet by right-clicking and selecting "Run" or using Ctrl+Enter (Windows/Linux) or Command+Enter (Mac).
 
-## 4. What is a selector?
-A selector in CSS is used to target and select specific HTML elements to apply styles to. Selectors can be based on element names, class names, IDs, attributes, or other criteria. They define the scope of the styles you want to apply. For example, the selector p targets all <p> elements, while .highlight targets all elements with the class "highlight".
+## 4. Getting information about files and server configurations
+The Network tab in the Developer Tools displays all the network requests made by the web page. You can inspect each request to gather information about files, server responses, headers, and more.
 
-## 5. How to compute CSS Specificity Value?
-CSS specificity is a value assigned to CSS selectors that determines which styles are applied to an element when multiple conflicting styles exist. Specificity is calculated based on the selector's components. The general rule is that the more specific a selector is, the higher its specificity value. Specificity is represented by a four-part value: a, b, c, d.
+## 5. Blocking requests
+In the Network tab, you can right-click on a request and choose to block it. This is useful for simulating network conditions, testing the behavior of a web page when certain requests are blocked, or analyzing how the page gracefully handles failed requests.
 
-## 6. To calculate the specificity value:
+## 6. Knowing how much JavaScript or CSS is used on a page
+In the Coverage tab of the Developer Tools, you can perform a code coverage analysis. This will show you the percentage of JavaScript or CSS code that is used or unused on the page, helping you identify unused code that can be optimized or removed.
 
-Count the number of ID selectors (#) in the selector and assign it to a.
-Count the number of class selectors, attribute selectors, and pseudo-classes (. [] :) in the selector and assign it to b.
-Count the number of element selectors and pseudo-elements (tag ::) in the selector and assign it to c.
-Assign d a value of 0 for universal selectors (*) and combinators (+, ~, >).
-For example, the selector div#myId.highlight has a specificity value of 1, 2, 0, 0 (1 ID selector, 2 class selectors).
+## 7. Detecting 404 issues
+In the Network tab, you can look for requests that return a 404 status code. These requests indicate that a resource (e.g., an image, script, or stylesheet) couldn't be found on the server, and it can help you identify and fix broken or missing resources.
 
-## 7. What are Box properties in CSS?
-Box properties in CSS refer to a set of properties that define the dimensions, spacing, and appearance of an element's box model. The box model consists of the content area, padding, border, and margin of an element.
-
-## 8. Some common box properties include:
-
-width and height: Specify the dimensions of the content area.
-padding: Defines the space between the content and the border.
-border: Sets the style, width, and color of the border around the content area.
-margin: Controls the space between the element and its neighboring elements.
-How does the browser load a webpage?
-When a browser loads a webpage, it follows these general steps:
-
-Retrieving the HTML: The browser sends a request to the server and retrieves the HTML document.
-Parsing the HTML: The browser parses the HTML document to construct the Document Object Model (DOM), representing the structure of the webpage.
+## 8. Moving elements on a webpage
+In the Elements tab, you can modify the position, size, and other CSS properties of elements. By changing the position property to absolute or relative and adjusting the top, bottom, left, or right properties, you can move elements within the page layout.
 
 ## Author
 - **Manuel Zambrano** - [mnlazs](https://github.com/mnlazs) :rage4:
