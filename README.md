@@ -41,8 +41,7 @@ Read or watch:
 - A README.md file, at the root of the folder of the project is mandatory
 - You are not allowed to install, import or use external libraries. This website must be build with only HTML/CSS/JavaScript. No NodeJS, React, - VueJS, Bootstrap, etc.
 - Your code should be W3C compliant and validate with [W3C-Validator](https://github.com/hs-hq/W3C-Validator)
----
-<img src="images/infografia.png" align="center" />
+
 ---
 Developer Tools are built-in tools in web browsers that allow developers to inspect, debug, and analyze web pages. They provide a set of features and functionalities to help developers with tasks like editing HTML and CSS, analyzing network traffic, debugging JavaScript code, optimizing performance, and more.
 
@@ -56,27 +55,29 @@ Right-click on a web page and select "Inspect Element" or press Ctrl+Shift+C (Wi
 Enable the Develop menu in Safari's preferences, then select "Show Web Inspector" from the Develop menu.
 ### Edge
 Right-click on a web page and select "Inspect Element" or press Ctrl+Shift+I (Windows/Linux) or Command+Option+I (Mac).
-Using the Elements tab to edit HTML and CSS: In the Elements tab of the Developer Tools, you can inspect and edit the HTML and CSS of a web page. Simply select the desired element in the HTML tree, and you can modify its attributes, content, or styles in the right-hand panel. Changes made here are temporary and won't affect the actual web page.
 
-## 2. Auditing a page with Lighthouse
+## 2. Using the Elements tab to edit HTML and CSS
+In the Elements tab of the Developer Tools, you can inspect and edit the HTML and CSS of a web page. Simply select the desired element in the HTML tree, and you can modify its attributes, content, or styles in the right-hand panel. Changes made here are temporary and won't affect the actual web page.
+
+## 3. Auditing a page with Lighthouse
 Lighthouse is a tool integrated into the Developer Tools that allows you to audit a web page for performance, accessibility, SEO, and more. To use it, open the Developer Tools, go to the Lighthouse tab, and click "Generate report." Lighthouse will analyze the page and provide suggestions and tips for improvement.
 
-## 3. Creating and running snippets on a page
+## 4. Creating and running snippets on a page
 In the Developer Tools, navigate to the Sources tab and select the Snippets panel. You can create a new snippet by right-clicking and choosing "New Snippet." Write your JavaScript code in the editor, and then you can run the snippet by right-clicking and selecting "Run" or using Ctrl+Enter (Windows/Linux) or Command+Enter (Mac).
 
-## 4. Getting information about files and server configurations
+## 5. Getting information about files and server configurations
 The Network tab in the Developer Tools displays all the network requests made by the web page. You can inspect each request to gather information about files, server responses, headers, and more.
 
-## 5. Blocking requests
+## 6. Blocking requests
 In the Network tab, you can right-click on a request and choose to block it. This is useful for simulating network conditions, testing the behavior of a web page when certain requests are blocked, or analyzing how the page gracefully handles failed requests.
 
-## 6. Knowing how much JavaScript or CSS is used on a page
+## 7. Knowing how much JavaScript or CSS is used on a page
 In the Coverage tab of the Developer Tools, you can perform a code coverage analysis. This will show you the percentage of JavaScript or CSS code that is used or unused on the page, helping you identify unused code that can be optimized or removed.
 
-## 7. Detecting 404 issues
+## 8. Detecting 404 issues
 In the Network tab, you can look for requests that return a 404 status code. These requests indicate that a resource (e.g., an image, script, or stylesheet) couldn't be found on the server, and it can help you identify and fix broken or missing resources.
 
-## 8. Moving elements on a webpage
+## 9. Moving elements on a webpage
 In the Elements tab, you can modify the position, size, and other CSS properties of elements. By changing the position property to absolute or relative and adjusting the top, bottom, left, or right properties, you can move elements within the page layout.
 
 ## Author
