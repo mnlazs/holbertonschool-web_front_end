@@ -1,80 +1,113 @@
 <div align="center">
-  <img src="sass.png" align="center" width="150" style="margin: 5px;"/>
+  <img src="sass.png" align="center" width="300" style="margin: 5px;"/>
 </div>
-<br> <!-- Línea vacía --><br> <!-- Línea vacía --><br> <!-- Línea vacía --><br>
 
 # README [![Awesome](https://cdn.jsdelivr.net/gh/sindresorhus/awesome@d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome#readme)
 
 ## Resources:books:
 Read or watch:
-* [Chrome DevTools | Tools for Web Developers | Google Developers](https://developer.chrome.com/docs/devtools/)
-* [Introduction | Down and Dirty with Chrome Developer Tools](https://blittle.github.io/chrome-dev-tools/)
-* [Firefox Developer Tools | MDN](https://firefox-source-docs.mozilla.org/devtools-user/index.html)
-* [Dev Tips - Developer Tips by Umar Hansa](https://umaar.com/dev-tips/)
-* [Get Started With Viewing And Changing CSS | Tools for Web Developers](https://developer.chrome.com/docs/devtools/)
-* [Keeping it simple with the JavaScript console - LogRocket Blog](https://blog.logrocket.com/keeping-it-simple-with-the-javascript-console/)
-* [Inspect Network Activity - Chrome DevTools 101](https://www.youtube.com/watch?v=e1gAyQuIFQo&ab_channel=GoogleChromeDevelopers)
+* [Sass Basics](https://sass-lang.com/guide)
+* [Sass flow control directives: @if, @for, @each and @while](https://sass-lang.com/documentation//at-rules/control)
+* [Sass references]([https://firefox-source-docs.mozilla.org/devtools-user/index.html](https://sass-lang.com/documentation/)
 ---
 
 ## Learning Objectives:bulb:
 
-- What you should learn from this project:
-- What Developer Tools in your browser are
-- How to open the Developer Tools on Chrome, Firefox, Safari, and Edge.
-- How to use the elements tab to edit HTML and CSS
-- How to audit a page according to the tips suggested by Lighthouse
-- How to create and run snippets on a pages.
-- How to get information about files and server configurations
-- How to block requests
-- How to know how much JavaScript or CSS is used on a page
-- How to detect 404 issues
-- How to move elements on a webpage
+- What Sass means
+- How to write Sass & Scss file
+- What is the difference between Sass and Scss
+- What is the Sass preprocessing
+- How to declare a variable
+- How to use nested definition
+- How to import a Sass file
+- How to use mixins
+- How to declare extend/inheritance styles
+- How to manipulate operators
 ---
 
 ## Requirements
 ### General
+- Allowed editors: vi, vim, emacs
+- All your files will be executed on Ubuntu 18.04 LTS using Sass 3.7.4 (or higher)
 - All your files should end with a new line
-- A README.md file, at the root of the folder of the project is mandatory
-- You are not allowed to install, import or use external libraries. This website must be build with only HTML/CSS/JavaScript. No NodeJS, React, - VueJS, Bootstrap, etc.
-- Your code should be W3C compliant and validate with [W3C-Validator](https://github.com/hs-hq/W3C-Validator)
+- All your Scss files should have a comment at the beginning (i.e. syntax above)
+- All your files should start by a comment describing the task
+- A README.md file, at the root of the folder of the project, is mandatory
+- The length of your files will be tested using wc
 
 ---
-Developer Tools are built-in tools in web browsers that allow developers to inspect, debug, and analyze web pages. They provide a set of features and functionalities to help developers with tasks like editing HTML and CSS, analyzing network traffic, debugging JavaScript code, optimizing performance, and more.
 
-## 1. Opening Developer Tools:
+## 1. What Sass means
+Sass stands for "Syntactically Awesome Style Sheets." It is a preprocessor scripting language that is interpreted or compiled into CSS. Sass adds functionality and features to CSS, making it easier to write and maintain stylesheets.
 
-### Chrome
-Right-click on a web page and select "Inspect" or press Ctrl+Shift+I (Windows/Linux) or Command+Option+I (Mac).
-### Firefox
-Right-click on a web page and select "Inspect Element" or press Ctrl+Shift+C (Windows/Linux) or Command+Option+C (Mac).
-### Safari
-Enable the Develop menu in Safari's preferences, then select "Show Web Inspector" from the Develop menu.
-### Edge
-Right-click on a web page and select "Inspect Element" or press Ctrl+Shift+I (Windows/Linux) or Command+Option+I (Mac).
+## 2. How to write Sass & Scss files
+Sass files have the extension ".sass," and SCSS files have the extension ".scss." SCSS is a newer syntax introduced in Sass 3, and it is more similar to CSS syntax. To write Sass or SCSS, you need a text editor or an Integrated Development Environment (IDE). Simply create a new file with the respective extension and start writing Sass or SCSS code.
 
-## 2. Using the Elements tab to edit HTML and CSS
-In the Elements tab of the Developer Tools, you can inspect and edit the HTML and CSS of a web page. Simply select the desired element in the HTML tree, and you can modify its attributes, content, or styles in the right-hand panel. Changes made here are temporary and won't affect the actual web page.
+## 3. What is the difference between Sass and Scss
+The main difference between Sass and SCSS is the syntax. Sass uses an indented syntax without curly braces and semicolons, while SCSS uses a syntax that is closer to CSS with curly braces and semicolons. SCSS is more popular and widely used as it feels more familiar to developers transitioning from CSS.
 
-## 3. Auditing a page with Lighthouse
-Lighthouse is a tool integrated into the Developer Tools that allows you to audit a web page for performance, accessibility, SEO, and more. To use it, open the Developer Tools, go to the Lighthouse tab, and click "Generate report." Lighthouse will analyze the page and provide suggestions and tips for improvement.
+## 4. What is Sass preprocessing
+Sass preprocessing refers to the step where Sass code is compiled into regular CSS code. This process is handled by a Sass compiler or preprocessor, which takes the Sass or SCSS files as input and generates a CSS file as output. Preprocessing allows developers to use features like variables, nesting, mixins, and more, which are not directly supported in standard CSS.
 
-## 4. Creating and running snippets on a page
-In the Developer Tools, navigate to the Sources tab and select the Snippets panel. You can create a new snippet by right-clicking and choosing "New Snippet." Write your JavaScript code in the editor, and then you can run the snippet by right-clicking and selecting "Run" or using Ctrl+Enter (Windows/Linux) or Command+Enter (Mac).
+## 5. How to declare a variable
+In Sass, you can declare variables to store values that can be reused throughout your stylesheets. To declare a variable, use the `$` symbol followed by the variable name and assign a value to it. Here's an example:
 
-## 5. Getting information about files and server configurations
-The Network tab in the Developer Tools displays all the network requests made by the web page. You can inspect each request to gather information about files, server responses, headers, and more.
+```scss
+$primary-color: #ff0000;
+```
 
-## 6. Blocking requests
-In the Network tab, you can right-click on a request and choose to block it. This is useful for simulating network conditions, testing the behavior of a web page when certain requests are blocked, or analyzing how the page gracefully handles failed requests.
+In this example, the variable `$primary-color` is assigned the value `#ff0000`, which represents a red color.
 
-## 7. Knowing how much JavaScript or CSS is used on a page
-In the Coverage tab of the Developer Tools, you can perform a code coverage analysis. This will show you the percentage of JavaScript or CSS code that is used or unused on the page, helping you identify unused code that can be optimized or removed.
+## 6. How to use nested definitions
+Sass allows you to nest your CSS rules within one another, providing a more structured and readable way of writing styles. To use nested definitions, simply nest the child selector inside the parent selector. Here's an example:
 
-## 8. Detecting 404 issues
-In the Network tab, you can look for requests that return a 404 status code. These requests indicate that a resource (e.g., an image, script, or stylesheet) couldn't be found on the server, and it can help you identify and fix broken or missing resources.
+```scss
+.navbar {
+  background-color: #f0f0f0;
+  padding: 10px;
 
-## 9. Moving elements on a webpage
-In the Elements tab, you can modify the position, size, and other CSS properties of elements. By changing the position property to absolute or relative and adjusting the top, bottom, left, or right properties, you can move elements within the page layout.
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 10px;
+    }
+  }
+}
+```
+
+In this example, the styles for the nested `ul` and `li` elements are scoped within the `.navbar` selector.
+
+## 7. How to import a Sass file
+To import a Sass file into another Sass file, use the `@import` directive followed by the path to the file you want to import. Here's an example:
+
+```scss
+@import 'variables';
+@import 'layout';
+```
+
+In this example, the Sass files "variables.scss" and "layout.scss" are imported into the current Sass file. Make sure to omit the file extension in the import statement.
+
+## 8. How to use mixins
+Mixins in Sass allow you to define reusable blocks of styles that can be included in multiple selectors. To create a mixin, use the `@mixin` directive followed by the mixin name and its styles. Here's an example:
+
+```scss
+@mixin button-styles {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+}
+
+.button {
+  @include button-styles;
+}
+```
+
+In this example, the `button-styles` mixin is defined with a set of styles, and it is included within the `.button`
 
 ## Author
 - **Manuel Zambrano** - [mnlazs](https://github.com/mnlazs) :rage4:
