@@ -8,7 +8,7 @@
 Read or watch:
 * [Sass Basics](https://sass-lang.com/guide)
 * [Sass flow control directives: @if, @for, @each and @while](https://sass-lang.com/documentation//at-rules/control)
-* [Sass references]([https://firefox-source-docs.mozilla.org/devtools-user/index.html](https://sass-lang.com/documentation/)
+* [Sass references](https://sass-lang.com/documentation/)
 ---
 
 ## Learning Objectives:bulb:
