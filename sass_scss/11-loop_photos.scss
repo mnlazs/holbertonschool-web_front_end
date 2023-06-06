@@ -1,0 +1,9 @@
+/*Sass  11. For each */
+
+@import '11-photos'; // Importa el archivo que contiene las definiciones de las imágenes
+
+@each $name in $list-names {
+  .photo-#{$name} {
+    background: image-url("photos/#{$name}.jpg") no-repeat;
+  }
+}
