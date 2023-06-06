@@ -1,0 +1,7 @@
+/* To create H* tags with font sizes from 1px to 5px using the @for statement in Sass */
+
+@for $i from 1 through 5 {
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}
