@@ -22,7 +22,6 @@
     --color-grey: #a0a0a0;
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
-    --nav-item-margin: 0 0 0 2rem;
   
     --text-color: var(--color-black);
   
@@ -74,6 +73,7 @@
     --nav-item-display: inline-block;
     --nav-item-margin: 0 2rem 0 0;
     --nav-item-link-hover: var(--color-white);
+    --nav-item-margin: 0 0 0 2rem;
   
     /** BUTTON **/
     --button-display: inline-block;
