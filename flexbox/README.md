@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="icon.png" align="right"/>
-  <img src="chrome.png" align="left" width="150" style="margin: 5px;"/>
+  <img src="images/icon.png" align="right"/>
+  <img src="flexbox.avg" align="left" width="150" style="margin: 5px;"/>
 
 <br> <!-- Línea vacía --><br> <!-- Línea vacía --><br> <!-- Línea vacía --><br>
 
