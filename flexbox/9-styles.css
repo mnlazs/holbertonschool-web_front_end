@@ -71,9 +71,8 @@
     --nav-item-font-size: var(--font-size-medium);
     --nav-item-letter-spacing: .04rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 0 2rem 0 0;
-    --nav-item-link-hover: var(--color-white);
     --nav-item-margin: 0 0 0 2rem;
+    --nav-item-link-hover: var(--color-white);
   
     /** BUTTON **/
     --button-display: inline-block;
@@ -176,10 +175,10 @@
   /* Grid
       ============================= */
   
-  .row{
+  .row {
     display: flex;
-
   }
+
   ul.row {
     margin: -1rem;
     padding: 0;
@@ -198,8 +197,9 @@
     width: calc((100% / 2) - 2rem);
   }
   
-  /* Navbar============================= */
-  
+  /* Navbar
+      ============================= */
+   
   .nav {
     margin: 0;
     padding: 0;
@@ -214,15 +214,15 @@
     font-size: var(--nav-item-font-size);
     letter-spacing: var(--nav-item-letter-spacing);
   }
+
+  .nav .nav-item + .nav-item {
+    margin: var(--nav-item-margin);
+  }
   
   .nav .nav-link {
     display: block;
     padding: 0.5rem 0;
     position: relative;
-  }
-
-  .nav .nav-item + .nav-item {
-    margin: var(--nav-item-margin);
   }
   
   .nav .nav-link:hover {
@@ -248,18 +248,18 @@
   
   /* Header
       ============================= */
-
+  
   .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
   .header {
     padding: var(--header-padding);
          position: relative;
          z-index: 3;
-         background: transparent;
+         background: transparent !important;
   }
 
   /* Footer
@@ -363,27 +363,28 @@
     justify-content: center;
     min-height: 50vh;
   }
+  
+  /* Section Latest news ============================= */
 
-/* Section Latest news ============================= */
+  .section-latest-news .row {
+    flex-direction: row-reverse;
+  }
 
-.section-latest-news .row {
-  flex-direction: row-reverse;
-}
+  /* Section SERVICES ============================= */
 
-/*Section ABOUT US ============================== */
+  .section-services .row {
+    flex-wrap: wrap;
+  }
 
-.section-about-us [class*='col-'] {
-  align-self: center;
-}
+  /* Section ABOUT US ============================= */
 
-/*** 4. CARD ***/
-/* Section SERVICES ============================= */
+  .section-about-us [class*='col-'] {
+    align-self: center;
+  }
 
-.section-services .row {
-  flex-wrap: wrap;
-}
-
-/* Card (all styles)
+  /*** 4. CARD ***/
+  
+  /* Card (all styles)
       ============================= */
   
   .card-category {
@@ -476,7 +477,8 @@
     transition-property: color, background-color;
   }
   
-  /* Card TESTIMONIAL============================= */
+  /* Card TESTIMONIAL
+      ============================= */
   
   .card-testimonial {
     text-align: center;
@@ -507,3 +509,4 @@
     font-size: 10rem;
     z-index: -1;
   }
+  
