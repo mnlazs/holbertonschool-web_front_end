@@ -15,4 +15,5 @@
 
 ## Author
 **Manuel Zambrano** - [mnlazs](https://github.com/mnlazs) :rage4:
-<b>[LinkedIn](https://www.linkedin.com/in/manuelalejandrozambrano/)</b>
+<b>[LinkedIn](https://www.linkedin.com/in/manuelalejandrozambrano/)</b> (images/
+
