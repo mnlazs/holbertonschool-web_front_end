@@ -1,14 +1,14 @@
 <div align="center">
 <br> <!-- Línea vacía --><br> <!-- Línea vacía --><br> <!-- Línea vacía --><br>
 
-# WEB DEVELOPMENT
+# WEB FRONT END
 [![Up to Date](https://github.com/ikatyang/emoji-cheat-sheet/workflows/Up%20to%20Date/badge.svg)](https://github.com/ikatyang/emoji-cheat-sheet/actions?query=workflow%3A%22Up+to+Date%22)
   </div>
 <div align="left"> 
 
   ## Description
 
-  Welcome to the README file for our web development projects! This repository contains the code for building and maintaining a dynamic and interactive websites projects. We leverage a combination of HTML, CSS, and JavaScript to create an engaging user interface that ensures a seamless browsing experience across different devices and browsers. In this README, you'll find information about the project structure, installation instructions, and guidelines for contributing. We also highlight any frameworks, libraries, or tools used to enhance functionality and streamline development. Feel free to explore the codebase and contribute to our exciting web development journey!
+ Welcome to the README, The web front-end is the client-side development of a website or web application, focusing on creating a visually appealing and user-friendly user interface. This README provides an overview of the technologies used, including HTML, CSS, and JavaScript, and highlights the responsiveness, cross-browser compatibility, and interactivity achieved through web front-end development. It also mentions any frameworks or libraries utilized for enhanced functionality. Additionally, it provides instructions on how to run and test the front-end code, as well as any other relevant information for developers and contributors.
  </div>
 
 
