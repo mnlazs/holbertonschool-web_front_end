@@ -22,9 +22,11 @@
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
 
 ## Author :pencil2:
- **Manuel Zambrano** <b>[mnlazs](https://github.com/mnlazs)</b> :rage4:
+ **Manuel Zambrano**:rage4:
 
-<b> <img src="images/githublogo.png" alt="GitHub" width="16" height="16"> [GitHub](https://github.com/mnlazs) </b>
-<b> <img src="images/640px-LinkedIn_logo_initials.png" alt="Texto alternativo" width="16" height="16"> [LinkedIn](https://www.linkedin.com/in/manuelalejandrozambrano/) </b>
+<b> <img src="images/githublogo.png" alt="GitHub" width="16" height="16"> [GitHub](https://github.com/mnlazs)</b>
+
+<b> <img src="images/640px-LinkedIn_logo_initials.png" alt="Texto alternativo" width="16" height="16"> [LinkedIn](https://www.linkedin.com/in/manuelalejandrozambrano/)</b>
+
 <b> <img src="images/download.png" alt="Twitter" width="17" height="17">[Twitter](https://twitter.com/mlejandroz/) </b>
  
