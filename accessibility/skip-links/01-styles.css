@@ -189,6 +189,10 @@
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
   }
+  .off-screen{
+    left: -100vw;
+    position: absolute;
+  }
   
   /*** 2. LAYOUT ***/
   
