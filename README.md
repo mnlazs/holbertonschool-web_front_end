@@ -17,7 +17,7 @@
   ### [Developer_tools](./developer_tools)
   ### [Flexbox](./flexbox)
   ### [Sass](./sass_scss)
-  ### [accessibility](./accessibility)
+  ### [Accessibility](./accessibility)
 
 ## Contact :postbox:	
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
