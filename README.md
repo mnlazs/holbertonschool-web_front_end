@@ -18,6 +18,7 @@
   ### [Flexbox](./flexbox)
   ### [Sass](./sass_scss)
   ### [Accessibility](./accessibility)
+  ### [Form](./form)
 
 ## Contact :postbox:	
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
