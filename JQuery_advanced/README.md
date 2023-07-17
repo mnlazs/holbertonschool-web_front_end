@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/ajax-web.png" width="650" style="margin: 15px;"/>
+  <img src="images/ajax-web-removebg-preview.png" width="650" style="margin: 15px;"/>
 </div>
 
 
