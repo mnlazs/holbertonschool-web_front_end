@@ -7,9 +7,9 @@
 
 ## Resources:books:
 Read or watch:
-* [jQuery CDN]([https://css-tricks.com/snippets/css/a-guide-to-flexbox/](https://releases.jquery.com/))
-* [jQuery API Documentation]([https://flexboxfroggy.com/#es](https://api.jquery.com/))
-* [Json server]([http://www.flexboxdefense.com/](https://github.com/typicode/json-server))
+* [jQuery CDN](https://releases.jquery.com/)
+* [jQuery API Documentation](https://api.jquery.com/)
+* [Json server](https://github.com/typicode/json-server)
 
 ## Learning Objectives: bulb:
 
