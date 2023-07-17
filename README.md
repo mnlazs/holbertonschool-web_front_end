@@ -21,7 +21,7 @@
   ### [Form](./form)
   ### [Bootstrap](./Bootstrap)
   ### [Javascript](./Javascript_advanced)
-  ### [JQuery](./)
+  ### [JQuery](./JQuery_advanced)
 
 
 ## Contact :postbox:	
