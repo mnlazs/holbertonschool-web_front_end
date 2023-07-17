@@ -21,6 +21,8 @@
   ### [Form](./form)
   ### [Bootstrap](./Bootstrap)
   ### [Javascript](./Javascript_advanced)
+  ### [JQuery](./)
+
 
 ## Contact :postbox:	
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
