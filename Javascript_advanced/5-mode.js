@@ -1,5 +1,4 @@
-function changeMode(size, weight, transform, background, color){
-  
+function changeMode(size, weight, transform, background, color) {
   return function() {
     document.body.style.fontSize = size + "px";
     document.body.style.fontWeight = weight;
@@ -9,36 +8,27 @@ function changeMode(size, weight, transform, background, color){
   }
 }
 
-function main(){
+function main() {
+  let spooky = changeMode(9, 'bold', 'uppercase', 'pink', 'green');
+  let darkMode = changeMode(9, 'bold', 'capitalize', 'black', 'white');
+  let screamMode = changeMode(12, 'normal', 'lowercase', 'white', 'black');
 
-  let spooky = changeMode(9, bold, uppercase, pink, green);
-  let darkMode = changeMode(9, bold, capitalize, black, white); 
-  let screamMode = changeMode(12, normal, lowercase, white, black);
-
-  // creates <p> element in document
+  // Creates <p> element in document
   let parrafo = document.createElement("p");
 
-  // add text to <p> element
-  parrafo.textContent('Welcome Holberton!')
+  // Add text to <p> element
+  parrafo.textContent = 'Welcome Holberton!';
 
   // Append it to the document
   document.body.appendChild(parrafo);
 
-  //======================================================//
-
-  // se crea un boton para el estilo Spooky //
+  // Add a button for the spooky mode
   let spookyButton = document.createElement("button");
+  spookyButton.textContent = 'Spooky';
+  spookyButton.addEventListener('click', spooky);
+  document.body.appendChild(spookyButton);
 
-  // add text to button element //
-  spookyButton.textContent('Spooky');
-
-  //Append it to the document
-  document.body.appendChild('spokyButton');
-
-
-  //======================================================//
   // Add a button for the dark mode
-
   let darkModeButton = document.createElement("button");
   darkModeButton.textContent = "Modo Oscuro";
   darkModeButton.addEventListener("click", darkMode);
