@@ -20,6 +20,7 @@
   ### [Accessibility](./accessibility)
   ### [Form](./form)
   ### [Bootstrap](./Bootstrap)
+  ### [Javascript](./Javascript)
 
 ## Contact :postbox:	
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
