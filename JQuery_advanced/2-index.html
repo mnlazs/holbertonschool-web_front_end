@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Task 2</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script>
+
+    function createTable() {
+      // Crea el elemento <table>
+      var table = $('<table>');
+      
+      // Crea una fila de encabezado (<thead>)
+      var thead = $('<thead>');
+      var headerRow = $('<tr>');
+      headerRow.append($('<th>').text('Nombre'));
+      headerRow.append($('<th>').text('Lastname'));
+      thead.append(headerRow);
+      
+      // Crea filas de datos (<tbody>)
+      var tbody = $('<tbody>');
+      var dataRows = [
+        { nombre: 'Juan', Lastname: 'Salva' },
+        { nombre: 'María', Lastname: 'Salva' },
+        { nombre: 'Pedro', Lastname: 'Salva' }
+      ];
+      
+      $.each(dataRows, function(index, row) {
+        var dataRow = $('<tr>');
+        dataRow.append($('<td>').text(row.nombre));
+        dataRow.append($('<td>').text(row.Lastname));
+        tbody.append(dataRow);
+      });
+      
+      // Agrega las filas al elemento <table>
+      table.append(thead);
+      table.append(tbody);
+      
+      // Agrega la tabla al contenedor en el HTML
+      $('#tablaContainer').append(table);
+    }
+
+    $(document).ready(function() {
+      createTable();
+    });
+
+  </script>
+</head>
+
+<body>
+  <div id="tablaContainer"></div>
+</body>
+
+</html>

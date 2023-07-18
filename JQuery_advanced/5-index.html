@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Task 4</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+        <script type="application/javascript">
+            $(document).ready(function() {
+   // Crea la función createFamilyTree
+              function createFamilyTree() {
+  // Crea una tabla vacía
+                  var table = document.createElement('table');
+
+  // Crea la cabecera de la tabla con las celdas "Firstname" y "Lastname"
+  var thead = document.createElement('thead');
+  var headerRow = document.createElement('tr');
+  var firstNameHeader = document.createElement('th');
+  firstNameHeader.textContent = 'Firstname';
+  var lastNameHeader = document.createElement('th');
+  lastNameHeader.textContent = 'Lastname';
+  headerRow.appendChild(firstNameHeader);
+  headerRow.appendChild(lastNameHeader);
+  thead.appendChild(headerRow);
+
+  // Crea el cuerpo de la tabla
+  var tbody = document.createElement('tbody');
+
+  // Agrega la cabecera y el cuerpo a la tabla
+  table.appendChild(thead);
+  table.appendChild(tbody);
+
+  // Agrega la tabla al cuerpo del documento
+  document.body.appendChild(table);
+}
+
+// Crea la función addNewMember
+function addNewMember(firstName, lastName) {
+  // Obtiene el cuerpo de la tabla
+  var tbody = document.querySelector('table tbody');
+
+  // Crea una nueva fila con tres celdas
+  var newRow = document.createElement('tr');
+  var firstNameCell = document.createElement('td');
+  var lastNameCell = document.createElement('td');
+  var removeCell = document.createElement('td');
+
+  // Establece el contenido de las celdas
+  firstNameCell.textContent = firstName;
+  lastNameCell.textContent = lastName;
+  removeCell.textContent = '(x)';
+
+  // Agrega la clase CSS para el fondo naranja en la celda de eliminación
+  removeCell.classList.add('orange-background');
+
+  // Agrega el evento click para eliminar la fila al hacer clic en la celda de eliminación
+  removeCell.addEventListener('click', function() {
+    newRow.remove();
+  });
+
+  // Agrega las celdas a la fila
+  newRow.appendChild(firstNameCell);
+  newRow.appendChild(lastNameCell);
+  newRow.appendChild(removeCell);
+
+  // Agrega la fila al cuerpo de la tabla
+  tbody.appendChild(newRow);
+}
+
+// Llama a la función createFamilyTree
+createFamilyTree();
+
+// Genera una tabla ficticia utilizando la función addNewMember
+addNewMember('Guillaume', 'Salva');
+addNewMember('Arielle', 'Snizt');
+addNewMember('Fanette', 'Snizt');
+addNewMember('Gerard', 'Snizt');
+addNewMember('Victor', 'Salva');
+            });
+          </script>
+    <body>
+    </body>
+
+</html>
